@@ -1,0 +1,248 @@
+/* variables */
+:root{
+    --gutter_horizontal: 6rem;
+}
+
+/* common style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.25%;
+}
+body{
+    font-family: 'Lato' ,sans-serif;
+    font-size: 1.6rem;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+button{
+    font-family: inherit;
+    display: inline-block;
+}
+/* grid */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.margin_small{
+    margin-top: 1rem;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-1-of-3{
+    width: calc((100% - 2 *(var(--gutter_horizontal))) /3);
+    /* background-color: brown; */
+    float: left;
+}
+.col-1-of-3:not(:last-child){
+    margin-right: var(--gutter_horizontal);
+}
+.row1{
+    margin-top: 1.5rem;
+}
+.row1::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.col-2-of-5{
+    
+    width: calc(2*(100%/5));
+    float: left;
+}
+.col-3-of-5{
+    
+    width: calc(3*(100%/5));
+    float: left;
+}
+.row2::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.col-3-of-5{
+    /* background-color: yellow; */
+    width: calc(3*(100%/5));
+    float: left;
+}
+.col-2-of-5{
+    /* background-color: yellow; */
+    width: calc(2*(100%/5));
+    float: left;
+}
+.row3::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-1-of-4{
+    width: calc(100%/4);
+    float: left;
+    /* background-color: yellow; */
+}
+.section_right{
+    background-color: black;
+    height: 36rem;
+}
+.section_left{
+    background-color: white;
+    height: 36rem;
+}
+/* navbar */
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.link{
+    font-size: 1.4rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.link:not(:first-child){
+    margin-left: 2rem;
+}
+.link:hover{
+    background-color: black;
+    color: white;
+}
+.navbtn{
+    
+    background-color: black;
+    color: white;
+    padding: .6rem 1.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    
+    transition: all .4s;
+}
+.navbtn:hover{
+    background-color: white;
+    color: black;
+}
+.text_box{
+    max-width: 33rem;
+    padding-left: 8rem;
+}
+
+/* heading primary */
+.heading_primary{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 6rem;
+}
+.heading_primary-1{
+    color: white;
+}
+.heading_primary-2{
+    color: black;
+}
+/* paragraph */
+.text{
+    margin-top: .5rem;
+}
+.text_1{
+    color: white;
+    opacity: 0.5;
+    
+}
+.text_2{
+    color: black;
+    opacity: 0.5;
+    
+}
+/* btn */
+.btn{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+.btn_white{
+    color: white;
+}
+.btn_black{
+    color: black;
+}
+/* image setting */
+.img_container{
+    height: 36rem;
+}
+.img{
+    height: 36rem;
+    width: 100%;
+    background-size: cover;
+}
+/* card section */
+.card{
+    
+
+    min-height: 38rem;
+    background-size: cover;
+    position: relative;
+
+    
+}
+.card1{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
+    url(../img/mountain.jpeg);
+}
+.card2{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
+    url(../img/building.jpeg);
+}
+.card3{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
+    url(../img/walk.webp);
+}
+.card4{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
+    url(../img/bulidings.jpeg);
+}
+.card_contant{
+    position: absolute;
+    top: 28rem;
+    left: 6rem;
+}
+.heading_tertiary{
+    font-size: 1.6rem;
+    color: rgb(231, 226, 226);
+    text-transform: capitalize;
+    margin-bottom: .3rem;
+}
+.card_text{
+    font-size: 1.6rem;
+    color:rgb(231, 226, 226) ;
+    border-bottom: 2px solid rgb(231, 226, 226);
+    margin-bottom: .5rem;
+}
+.button{
+    background: transparent;
+    border: none;
+    color: rgb(231, 226, 226);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.icon{
+    font-size: 1.2rem;
+    color:rgb(231, 226, 226);
+    margin-left: 3rem;
+    padding: 1rem;
+}
